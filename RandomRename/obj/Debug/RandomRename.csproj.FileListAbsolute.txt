@@ -1,0 +1,15 @@
+C:\Users\fligh\source\repos\RandomRename\RandomRename\bin\Debug\RandomRename.exe.config
+C:\Users\fligh\source\repos\RandomRename\RandomRename\bin\Debug\RandomRename.exe
+C:\Users\fligh\source\repos\RandomRename\RandomRename\bin\Debug\RandomRename.pdb
+C:\Users\fligh\source\repos\RandomRename\RandomRename\obj\Debug\RandomRename.csprojAssemblyReference.cache
+C:\Users\fligh\source\repos\RandomRename\RandomRename\obj\Debug\RandomRename.Form1.resources
+C:\Users\fligh\source\repos\RandomRename\RandomRename\obj\Debug\RandomRename.Properties.Resources.resources
+C:\Users\fligh\source\repos\RandomRename\RandomRename\obj\Debug\RandomRename.csproj.GenerateResource.cache
+C:\Users\fligh\source\repos\RandomRename\RandomRename\obj\Debug\RandomRename.csproj.CoreCompileInputs.cache
+C:\Users\fligh\source\repos\RandomRename\RandomRename\obj\Debug\RandomRename.exe
+C:\Users\fligh\source\repos\RandomRename\RandomRename\obj\Debug\RandomRename.pdb
+C:\Users\fligh\source\repos\RandomRename\RandomRename\bin\Debug\ShellBrowser.Core.dll
+C:\Users\fligh\source\repos\RandomRename\RandomRename\bin\Debug\ShellBrowser.dll
+C:\Users\fligh\source\repos\RandomRename\RandomRename\bin\Debug\ShellBrowser.xml
+C:\Users\fligh\source\repos\RandomRename\RandomRename\bin\Debug\ShellBrowser.Core.xml
+C:\Users\fligh\source\repos\RandomRename\RandomRename\obj\Debug\RandomRename.csproj.CopyComplete

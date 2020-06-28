@@ -16,5 +16,19 @@ namespace RandomRename
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //init a new fbd
+            FolderBrowserDialog fbd = new FolderBrowserDialog();
+
+            DialogResult result = fbd.ShowDialog();
+
+            //get the result
+            if (result == DialogResult.OK)
+            {
+                directorylabel.Text = fbd.SelectedPath;
+            }
+        }
     }
 }
