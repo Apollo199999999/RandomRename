@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace RandomRename
 {
@@ -37,7 +38,7 @@ namespace RandomRename
             }
         }
 
-        private void startButton_Click(object sender, EventArgs e)
+        private async void startButton_Click(object sender, EventArgs e)
         {
             if (canStart == true)
             {
@@ -54,10 +55,30 @@ namespace RandomRename
                 //do the same thing, but this time, rename the files
                 foreach (string filename in Directory.GetFiles(directorylabel.Text))
                 {
+                    //copy the file to another dir
+                    Directory.CreateDirectory("C:\\output\\temp");
+                    File.Copy(filename, Path.Combine("C:\\output\\temp", Path.GetFileName(filename)));
+
                     //pick a random item from the filenamelist
                     var random = new Random();
                     int index = random.Next(filenamelist.Count);
+
+                    //init two locations
+                    var location1 = Path.Combine("C:\\output\\temp", Path.GetFileName(filename));
+
+                    //rename
+                    System.Diagnostics.Process.Start("cmd.exe", "/C rename " + location1 + " " + filenamelist[index]);
+
+                    await Task.Delay(500);
                     
+                    //Move to original dir
+                    File.Move(Path.Combine("C:\\output\\temp", Path.GetFileName(filenamelist[index])), Path.Combine("C:\\output\\", Path.GetFileName(filenamelist[index])));
+
+                    //remove the name from list
+                    filenamelist.RemoveAt(index);
+                    
+
+
                 }
 
             }
